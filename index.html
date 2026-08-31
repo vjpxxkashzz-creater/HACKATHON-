@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#030605">
+  <title>Cyber Security Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= INTRO ================= -->
+  <div id="intro">
+
+    <canvas id="matrix"></canvas>
+
+    <div class="grid"></div>
+    <div class="scan"></div>
+
+    <div class="intro-content">
+
+      <div class="system-text">
+        <span id="bootText">SYSTEM BOOTING...</span>
+      </div>
+
+      <div class="cyber-image">
+        <img src="hacker-image.jpg" alt="Cyber visual">
+        <div class="image-scan"></div>
+      </div>
+
+      <div class="rings ring1"></div>
+      <div class="rings ring2"></div>
+
+      <h1 id="welcome">
+        WELCOME TO MY WORLD
+      </h1>
+
+      <div id="bootLines"></div>
+
+      <div class="loading">
+        <div id="loadingBar"></div>
+      </div>
+
+      <div id="percent">0%</div>
+
+      <div id="ready">
+        SYSTEM READY
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= APP ================= -->
+
+  <div id="app">
+
+    <header>
+
+      <div class="logo">
+        <span>&lt;/&gt;</span>
+        CYBER SECURITY HUB
+      </div>
+
+      <button id="menuButton">☰</button>
+
+      <nav id="navigation">
+
+        <button class="nav active" data-page="home">
+          HOME
+        </button>
+
+        <button class="nav" data-page="register">
+          REGISTER
+        </button>
+
+        <button class="nav" data-page="history">
+          HISTORY
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!-- ================= HOME ================= -->
+
+      <section id="home" class="page active">
+
+        <div class="hero">
+
+          <div class="hero-text">
+
+            <div class="status">
+              ● SECURITY SYSTEM ONLINE
+            </div>
+
+            <h2>
+              CYBER<br>
+              <span>SECURITY HUB</span>
+            </h2>
+
+            <p>
+              Learn. Protect. Recover.
+              Explore responsible cybersecurity awareness
+              and digital safety.
+            </p>
+
+            <div class="buttons">
+
+              <button class="main-btn" data-page="register">
+                START DEMO REQUEST →
+              </button>
+
+              <button class="outline-btn" id="exploreBtn">
+                EXPLORE TOPICS
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <!-- TERMINAL -->
+
+          <div class="terminal-box">
+
+            <div class="terminal-header">
+              <span>LIVE TERMINAL</span>
+              <span class="live">● LIVE</span>
+            </div>
+
+            <div id="terminal"></div>
+
+            <span class="cursor">_</span>
+
+          </div>
+
+        </div>
+
+
+        <!-- STATUS -->
+
+        <div class="status-grid">
+
+          <div>
+            <small>SYSTEM</small>
+            <strong>ONLINE</strong>
+          </div>
+
+          <div>
+            <small>ENCRYPTION</small>
+            <strong>ACTIVE</strong>
+          </div>
+
+          <div>
+            <small>NETWORK</small>
+            <strong>SECURE</strong>
+          </div>
+
+          <div>
+            <small>THREAT</small>
+            <strong>LOW</strong>
+          </div>
+
+        </div>
+
+
+        <!-- TOPICS -->
+
+        <div id="topics">
+
+          <div class="section-title">
+            <span>01 // KNOWLEDGE BASE</span>
+            <h3>CYBER AWARENESS</h3>
+          </div>
+
+          <div id="topicGrid"></div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= REGISTER ================= -->
+
+      <section id="register" class="page">
+
+        <div class="section-title">
+          <span>02 // DEMO REQUEST</span>
+          <h3>REGISTER</h3>
+        </div>
+
+        <div class="register-container">
+
+          <div class="register-info">
+
+            <div class="number">01</div>
+
+            <h3>
+              SECURE REQUEST INTERFACE
+            </h3>
+
+            <p>
+              Create an educational demo request.
+              This interface does not perform real
+              actions on third-party platforms.
+            </p>
+
+            <div class="online">
+              ● CLIENT INTERFACE READY
+            </div>
+
+          </div>
+
+
+          <form id="registerForm">
+
+            <label>
+              NAME
+              <input
+                id="name"
+                type="text"
+                maxlength="60"
+                placeholder="Enter your name"
+              >
+            </label>
+
+
+            <label>
+              AGE
+              <input
+                id="age"
+                type="number"
+                min="1"
+                max="120"
+                placeholder="Enter your age"
+              >
+            </label>
+
+
+            <div class="label">
+              ACTION
+            </div>
+
+            <div class="choice-group">
+
+              <button type="button" class="choice" data-action="BAN">
+                BAN
+              </button>
+
+              <button type="button" class="choice" data-action="UNBAN">
+                UNBAN
+              </button>
+
+            </div>
+
+
+            <div class="label">
+              SELECT PLATFORM
+            </div>
+
+            <div class="platform-group">
+
+              <button type="button" class="platform" data-platform="INSTAGRAM">
+                ◎ INSTAGRAM
+              </button>
+
+              <button type="button" class="platform" data-platform="FACEBOOK">
+                f FACEBOOK
+              </button>
+
+              <button type="button" class="platform" data-platform="WHATSAPP">
+                ◉ WHATSAPP
+              </button>
+
+            </div>
+
+
+            <label>
+              REFERENCE ID
+              <input
+                id="reference"
+                type="text"
+                maxlength="50"
+                placeholder="Example: DEMO-123"
+              >
+            </label>
+
+
+            <label class="robot">
+
+              <input id="robot" type="checkbox">
+
+              <span class="check"></span>
+
+              I'M NOT A ROBOT
+
+            </label>
+
+            <div id="verification"></div>
+
+
+            <button class="submit" type="submit">
+              SUBMIT REQUEST ↗
+            </button>
+
+            <div id="formMessage"></div>
+
+          </form>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= HISTORY ================= -->
+
+      <section id="history" class="page">
+
+        <div class="section-title">
+          <span>03 // REQUEST LOG</span>
+          <h3>HISTORY</h3>
+        </div>
+
+        <div class="history-tools">
+
+          <input
+            id="search"
+            type="search"
+            placeholder="Search..."
+          >
+
+          <select id="platformFilter">
+            <option value="ALL">ALL PLATFORMS</option>
+            <option value="INSTAGRAM">INSTAGRAM</option>
+            <option value="FACEBOOK">FACEBOOK</option>
+            <option value="WHATSAPP">WHATSAPP</option>
+          </select>
+
+          <select id="actionFilter">
+            <option value="ALL">ALL ACTIONS</option>
+            <option value="BAN">BAN</option>
+            <option value="UNBAN">UNBAN</option>
+          </select>
+
+          <button id="clearHistory">
+            CLEAR
+          </button>
+
+        </div>
+
+        <div id="historyList"></div>
+
+      </section>
+
+    </main>
+
+
+    <footer>
+
+      <div>
+        <strong>CYBER SECURITY HUB</strong>
+        <span>
+          Educational Interface • Cyber Awareness
+        </span>
+      </div>
+
+      <div class="footer-status">
+        ● SYSTEM ONLINE
+      </div>
+
+    </footer>
+
+  </div>
+
+
+  <!-- ================= MODAL ================= -->
+
+  <div id="modal">
+
+    <div class="modal-bg"></div>
+
+    <div class="modal">
+
+      <button id="closeModal">
+        ×
+      </button>
+
+      <div id="modalIcon"></div>
+
+      <span id="modalNumber"></span>
+
+      <h2 id="modalTitle"></h2>
+
+      <p id="modalDescription"></p>
+
+      <div class="tips">
+
+        <h4>SAFETY PROTOCOL</h4>
+
+        <ul id="modalTips"></ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
